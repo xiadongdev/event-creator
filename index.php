@@ -1,7 +1,10 @@
 <?php include_once 'config/init.php'; ?>
 
 <?php
-$templete = new Template('templates/frontpage.php');
+$event = new Event;
 
-$templete->title = 'latest events';
-echo $templete;
+$template = new Template('templates/frontpage.php');
+
+$template->title = 'latest events';
+$template->events = $event->getAllEvents();
+echo $template;
