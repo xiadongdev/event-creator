@@ -14,7 +14,7 @@
       <?php foreach($events as $event): ?>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="<?php echo $event->img_url; ?>" style="max-height: 12rem"/>
+            <img src="<?php echo $event->img_url; ?>" style="max-height: 15rem"/>
             <div class="card-body">
               <h4><?php echo $event->title; ?></h4>
               <p class="card-text"><?php echo $event->description; ?></p>
@@ -24,10 +24,10 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <a class="btn btn-sm btn-outline-secondary" href="event.php?id=<?php echo $event->id; ?>">View</a>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 </div>
-                <small class="text-muted">9 mins</small>
+                <small class="text-muted"><?php echo $event->reg_date; ?></small>
               </div>
             </div>
           </div>

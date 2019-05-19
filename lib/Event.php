@@ -13,4 +13,12 @@
       $results = $this->db->resultSet();
       return $results;
     }
+
+    public function getEvent($id){
+      $this->db->query('SELECT * FROM events WHERE id = :id');
+      $this->db->bind(':id', $id);
+      
+      $result = $this->db->single();
+      return $result;
+    }
   }
