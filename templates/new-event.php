@@ -31,7 +31,7 @@
           </div>
           <div class="form-group">
             <label>Image URL</label>
-            <input type="text" class="form-control" name="img-url">
+            <input type="text" class="form-control" name="img_url">
           </div>
           <input type="submit" class="btn btn-outline-secondary" value="Submit" name="submit">
         </form>

@@ -4,11 +4,11 @@
     if(is_string ($page)) {
       $location = $page;
     } else {
-      $location = $_SERVER[SCRIPT_NAME];
+      $location = $_SERVER['SCRIPT_NAME'];
     }
 
     //check for message
-    if($mesage != NULL){
+    if($message != NULL){
       //set message
       $_SESSION['message'] = $message;
     }

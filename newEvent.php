@@ -10,16 +10,15 @@ if(isset($_POST['submit'])){
   $data['location'] = $_POST['location'];
   $data['summary'] = $_POST['summary'];
   $data['description'] = $_POST['description'];
-  $data['img-url'] = $_POST['img-url'];
+  $data['img_url'] = $_POST['img_url'];
 
   if($event->create($data)){
     redirect('index.php', 'A New event has been created', 'success');
   } else {
+    echo 'error';
     redirect('index.php', 'Something went wrong', 'error');
   }
 }
 
 $template = new Template('templates/new-event.php');
-
-$template->events = $event->getAllEvents();
 echo $template;
