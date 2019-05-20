@@ -7,4 +7,8 @@
     
   </head>
   <body>
+    <header>
+    <a class="btn btn-sm btn-outline-secondary" href="newEvent.php">Add New Event</a>
+    </header>
+    <?php displayMessage(); ?>
     

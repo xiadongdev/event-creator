@@ -21,4 +21,22 @@
       $result = $this->db->single();
       return $result;
     }
+
+    public function create($data){
+      $this->db->query('INSERT INTO events (title, date, location, summary, description, img_url)
+      VALUES (:title, :date, :location, :summary, :description, :img-url)');
+
+      $this->db->bind(':title', $data['title']);
+      $this->db->bind(':date', $data['date']);
+      $this->db->bind(':location', $data['location']);
+      $this->db->bind(':summary', $data['summary']);
+      $this->db->bind(':description', $data['description']);
+      $this->db->bind(':img-url', $data['img-url']);
+
+      if($this->db->execute()){
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
