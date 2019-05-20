@@ -13,7 +13,7 @@
           <a href="index.php" class="navbar-brand d-flex align-items-center">
             <strong>Event Creator</strong>
           </a>
-          <a class="btn btn-outline-secondary" href="newEvent.php">Add New Event</a>
+          <a class="btn btn-light" href="newEvent.php">Add New Event</a>
         </div>
       </div>
     </header>
