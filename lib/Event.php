@@ -48,4 +48,21 @@
         return false;
       }
     }
+
+    public function update($id, $data){
+      $this->db->query("UPDATE events SET title = :title, date = :date, location = :location, summary = :summary, description = :description, img_url = :img_url WHERE id = $id");
+
+      $this->db->bind(':title', $data['title']);
+      $this->db->bind(':date', $data['date']);
+      $this->db->bind(':location', $data['location']);
+      $this->db->bind(':summary', $data['summary']);
+      $this->db->bind(':description', $data['description']);
+      $this->db->bind(':img_url', $data['img_url']);
+
+      if($this->db->execute()){
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
