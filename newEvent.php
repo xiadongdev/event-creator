@@ -15,7 +15,6 @@ if(isset($_POST['submit'])){
   if($event->create($data)){
     redirect('index.php', 'A New event has been created', 'success');
   } else {
-    echo 'error';
     redirect('index.php', 'Something went wrong', 'error');
   }
 }

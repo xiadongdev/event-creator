@@ -7,6 +7,14 @@
     </section>
     <div class="album py-5 bg-light">
       <div class="container">
+        <div>
+          <a class="btn btn-sm btn-outline-secondary" href="editEvent.php?id=<?php echo $event->id; ?>">Edit</a>
+          
+          <form style="display:inline;" method="post" action="event.php">
+            <input type="hidden" name="del_id" value="<?php echo $event->id; ?>">
+            <input type="submit" class="btn btn-sm btn-outline-danger" value="Delete">
+          </form>
+        </div>
         <p class="date-location" style="color: grey;">
           <?php echo $event->date; ?> <br/>
           <?php echo nl2br($event->location); ?>

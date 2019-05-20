@@ -14,21 +14,14 @@
       <?php foreach($events as $event): ?>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="<?php echo $event->img_url; ?>" style="max-height: 15rem"/>
+            <img src="<?php echo $event->img_url; ?>" style="max-height: 15rem"/></a>
             <div class="card-body">
-              <h4><?php echo $event->title; ?></h4>
+              <a href="event.php?id=<?php echo $event->id; ?>"><h4><?php echo $event->title; ?></h4></a>
               <p class="card-text"><?php echo $event->summary; ?></p>
               <p class="date-location" style="color: grey; font-size: .9rem;">
                 <?php echo $event->date; ?> <br/>
                 <?php echo nl2br($event->location); ?>
               </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a class="btn btn-sm btn-outline-secondary" href="event.php?id=<?php echo $event->id; ?>">View</a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted"><?php echo $event->reg_date; ?></small>
-              </div>
             </div>
           </div>
         </div>
