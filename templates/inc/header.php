@@ -8,7 +8,14 @@
   </head>
   <body>
     <header>
-    <a class="btn btn-sm btn-outline-secondary" href="newEvent.php">Add New Event</a>
+      <div class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container d-flex justify-content-between">
+          <a href="index.php" class="navbar-brand d-flex align-items-center">
+            <strong>Event Creator</strong>
+          </a>
+          <a class="btn btn-outline-secondary" href="newEvent.php">Add New Event</a>
+        </div>
+      </div>
     </header>
     <?php displayMessage(); ?>
     
