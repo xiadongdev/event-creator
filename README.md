@@ -4,14 +4,15 @@ A full stack web application for listing family events for the weekends. Users c
 
 ## Screenshots of Event Creator
 - View all events
-!["Screenshot of URLs page"](https://github.com/xiadongdev/event-creator/blob/master/docs/allevents.png?raw=true)
+!["Screenshot of home page"](https://github.com/xiadongdev/event-creator/blob/master/docs/allevents.png?raw=true)
 
 - View event details
-!["Screenshot of URLs page"](https://github.com/xiadongdev/later-cart/blob/master/docs/eventdetail.gif?raw=true)
+!["Screenshot of event detail page"](https://github.com/xiadongdev/later-cart/blob/master/docs/eventdetail.png?raw=true)
 
 ## Tech Stack
 
 - PHP
 - MySQL
+- phpMyAdmin
 - Apache2
-- Bootscrap
+- Bootstrap
